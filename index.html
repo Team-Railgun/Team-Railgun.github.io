@@ -11,7 +11,7 @@
 
   <!-- jquery -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  
+
   <!-- semantic-ui -->
   <link href="bower_components/semantic/dist/semantic.min.css" rel="stylesheet">
   <script src="bower_components/semantic/dist/semantic.min.js"></script>
@@ -55,7 +55,7 @@
 
     })
   ;
-  
+
   function scrollDown(){
 	$('html, body').animate({scrollTop: $('.masthead').next().offset().top}, 1000);
   }
@@ -68,11 +68,11 @@
   <div class="ui container">
   <a class="active item"><i class="mdi mdi-home"></i>홈</a>
   <a class="item"><i class="mdi mdi-school"></i>학교</a>
-  <a class="item">학생</a>
-  <a class="item">선생님</a>
+  <a class="item"><i class="mdi mdi-face"></i>학생</a>
+  <a class="item"><i class="mdi mdi-face"></i>선생님</a>
     <div class="right menu">
       <div class="item">
-        <a class="ui button" href="Lev6-Layout/login.html">로그인</a>
+        <a class="ui button" href="Lev6-Layout/login.html"><i class="mdi mdi-account"></i>로그인</a>
       </div>
     </div>
   </div>
@@ -82,8 +82,8 @@
 <div class="ui vertical inverted sidebar menu">
   <a class="active item"><i class="mdi mdi-home"></i>홈</a>
   <a class="item"><i class="mdi mdi-school"></i>학교</a>
-  <a class="item">학생</a>
-  <a class="item">선생님</a>
+  <a class="item"><i class="mdi mdi-face"></i>학생</a>
+  <a class="item"><i class="mdi mdi-book"></i>선생님</a>
 </div>
 
 <!-- Page Contents -->
@@ -96,10 +96,11 @@
         </a>
         <a class="active item"><i class="mdi mdi-home"></i>홈</a>
         <a class="item"><i class="mdi mdi-school"></i>학교</a>
-        <a class="item">학생</a>
-        <a class="item">선생님</a>
+        <a class="item"><i class="mdi mdi-face"></i>학생</a>
+        <a class="item"><i class="mdi mdi-book"></i>선생님</a>
         <div class="right item">
-          <a class="ui inverted button" href="Lev6-Layout/login.html">로그인</a>
+          <a class="ui inverted button" href="Lev6-Layout/login.html">
+            <i class="mdi mdi-account"></i>로그인</a>
         </div>
       </div>
     </div>
@@ -111,7 +112,7 @@
       <h2>학교 시간표를 멋지게 사용하세요</h2>
       <a class="ui huge button" href="Lev6-Layout">시작하기 <i class="mdi mdi-walk"></i></a>
     </div>
-	
+
     <div class="page-viewer-wrapper">
       <a class="mdi mdi-chevron-down page-viewer" onclick="scrollDown(); return false;"></a>
     </div>
@@ -121,20 +122,20 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3 class="ui header">교사</h3>
+          <h3 class="ui header"><i class="mdi mdi-book"></i>교사</h3>
           <p>교사 전용 시간표를 제공해 줍니다. 푸시알림은 기본.</p>
-          <h3 class="ui header">학생</h3>
+          <h3 class="ui header"><i class="mdi mdi-face"></i>학생</h3>
           <p>학생 전용 시간표를 제공해 줍니다. 푸시알림은 기본.</p>
         </div>
         <div class="six wide right floated column">
           <img src="img/team-railgun.png" class="ui large bordered rounded image">
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="center aligned column">
           <a class="ui huge button">장비를 정지하실려면 X 버튼을 눌러주세요</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -143,7 +144,7 @@
     <div class="ui equal width stackable internally celled grid">
       <div class="center aligned row">
         <div class="column">
-          <h3>"이거 개발할려고 커피 10캔 이상은 마신 듯"</h3>
+          <h3>"어떤 웹 서비스의 멋진 시간표"</h3>
           <p>
             <img src="https://avatars2.githubusercontent.com/u/5278201" class="ui avatar image"> <b></b>BetaFish</p>
         </div>
