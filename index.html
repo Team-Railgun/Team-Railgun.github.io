@@ -9,12 +9,12 @@
   <!-- Site Properties -->
   <title>Lev6 - 홈페이지</title>
 
+  <!-- jquery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  
   <!-- semantic-ui -->
   <link href="bower_components/semantic/dist/semantic.min.css" rel="stylesheet">
   <script src="bower_components/semantic/dist/semantic.min.js"></script>
-
-  <!-- jquery -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
   <!-- lodash -->
   <script src="bower_components/lodash/dist/lodash.min.js"></script>
@@ -55,6 +55,10 @@
 
     })
   ;
+  
+  function scrollDown(){
+	$('html, body').animate({scrollTop: $('.masthead').next().offset().top}, 1000);
+  }
   </script>
 </head>
 <body>
@@ -105,9 +109,12 @@
         <i class="mdi mdi-timetable"></i>Lev6
       </h1>
       <h2>학교 시간표를 멋지게 사용하세요</h2>
-      <a class="ui huge primary button" href="Lev6-Layout">시작하기 <i class="mdi mdi-walk"></i></a>
+      <a class="ui huge button" href="Lev6-Layout">시작하기 <i class="mdi mdi-walk"></i></a>
     </div>
-
+	
+    <div class="page-viewer-wrapper">
+      <a class="mdi mdi-chevron-down page-viewer" onclick="scrollDown(); return false;"></a>
+    </div>
   </div>
 
   <div class="ui vertical stripe segment">
