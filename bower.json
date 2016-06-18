@@ -1,0 +1,17 @@
+{
+  "name": "Lev6-Layout",
+  "homepage": "https://github.com/Team-Railgun/Lev6-Layout",
+  "authors": [
+    "BetaFish <yale2a1@gmail.com>",
+    "HelloWorld017 <deu07115@gmail.com>"
+  ],
+  "description": "Timetable Management Services of School",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "semantic": "semantic-ui#^2.1.8",
+    "mdi": "^1.6.50"
+  }
+}
