@@ -42,16 +42,6 @@
   }
 }
 
-@media (min-width: 992px ) {
-  .masthead {
-	  height: 100vh;
-  }
-  
-  .page-viewer-wrapper {
-	  display: block;
-  }
-}
-
 .masthead {
 	background: #303030 url(../img/background.png) no-repeat fixed center/cover !important;
 }
@@ -60,6 +50,9 @@
 	border: none;
 }
 
+* :not([class^=mdi]){
+  font-family: 'Ubuntu', 'Roboto', '나눔고딕', '나눔바른고딕', '맑은 고딕', 'Noto Sans KR', sans-serif !important;
+}
 /*.mobile-only, .desktop-only, .tablet-only {
   display: none !important;
 }

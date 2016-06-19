@@ -4,7 +4,7 @@
 
 .masthead.segment {
   min-height: 700px;
-  padding: 1em 0em;
+  padding: 1em 0;
 }
 .masthead .logo.item img {
   margin-right: 1em;
@@ -13,8 +13,7 @@
   margin-left: 0.5em;
 }
 .masthead h1.ui.header {
-  margin-top: 3em;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   font-size: 4em;
   font-weight: normal;
 }
@@ -24,7 +23,7 @@
 }
 
 .ui.vertical.stripe {
-  padding: 8em 0em;
+  padding: 8em 0;
 }
 .ui.vertical.stripe h3 {
   font-size: 2em;
@@ -40,11 +39,11 @@
   font-size: 1.33em;
 }
 .ui.vertical.stripe .horizontal.divider {
-  margin: 3em 0em;
+  margin: 3em 0;
 }
 
 .quote.stripe.segment {
-  padding: 0em;
+  padding: 0;
 }
 .quote.stripe.segment .grid .column {
   padding-top: 5em;
@@ -52,7 +51,7 @@
 }
 
 .footer.segment {
-  padding: 5em 0em;
+  padding: 5em 0;
 }
 
 .secondary.pointing.menu .toc.item {
@@ -80,5 +79,15 @@
   .masthead h2 {
     margin-top: 0.5em;
     font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-aspect-ratio: 4/3) and (min-width: 992px) {
+  .masthead {
+	  height: 100vh !important;
+  }
+  
+  .page-viewer-wrapper {
+	  display: block !important;
   }
 }

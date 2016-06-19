@@ -32,33 +32,24 @@
   <link href="css/main.css" rel="stylesheet">
 
   <script>
-  $(document)
-    .ready(function() {
-
+    $(document).ready(function(){
       // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  
-  function scrollDown(){
-	$('html, body').animate({scrollTop: $('.masthead').next().offset().top}, 1000);
-  }
+      $('.masthead').visibility({
+        once: false,
+        onBottomPassed: function() {
+          $('.fixed.menu').transition('fade in');
+        },
+        onBottomPassedReverse: function() {
+          $('.fixed.menu').transition('fade out');
+        }
+      });
+      
+      $('.ui.sidebar').sidebar('attach events', '.toc.item');
+    });
+    
+    function scrollDown(){
+	  $('html, body').animate({scrollTop: $('.masthead').next().offset().top}, 1000);
+    }
   </script>
 </head>
 <body>
@@ -91,8 +82,8 @@
   <div class="ui inverted vertical masthead center aligned segment">  <!-- id="gradient" -->
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
+        <a class="toc item" style="z-index:999">
+          <i class="mdi mdi-menu"></i>
         </a>
         <a class="active item"><i class="mdi mdi-home"></i>홈</a>
         <a class="item"><i class="mdi mdi-school"></i>학교</a>
@@ -103,14 +94,16 @@
         </div>
       </div>
     </div>
-
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        <i class="mdi mdi-timetable"></i>Lev6
-      </h1>
-      <h2>학교 시간표를 멋지게 사용하세요</h2>
-      <a class="ui huge button" href="Lev6-Layout">시작하기 <i class="mdi mdi-walk"></i></a>
-    </div>
+	
+    <div class="ui middle aligned center aligned grid" style="position: absolute; top: 0; left: 0; right: 0; height: 100%;">
+      <div class="ui text container column">
+        <h1 class="ui inverted header">
+          <i class="mdi mdi-timetable"></i>Lev6
+        </h1>
+        <h2>학교 시간표를 멋지게 사용하세요</h2>
+        <a class="ui huge button" href="Lev6-Layout">시작하기 <i class="mdi mdi-walk"></i></a>
+      </div>
+	</div>
 	
     <div class="page-viewer-wrapper">
       <a class="mdi mdi-chevron-down page-viewer" onclick="scrollDown(); return false;"></a>
@@ -175,7 +168,7 @@
       <div class="row-container warp">
         <div class="credit">
           <h5 class="ui inverted header">
-            <img src="img/team-railgun.png" style="width:50px; hight:auto;">
+            <img src="img/team-railgun.png" style="width:50px; height:auto;">
             <span>Project Lev6</span></h5>
           <p>copyright(C) Team-railgun</p>
         </div>
